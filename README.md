@@ -1,26 +1,28 @@
-# 🖼️ AI Image Caption Generator
+# 🖼️ Smart AI Image Caption Generator
 
-This app generates a caption for any uploaded image using BLIP and rewrites it in a creative style using a Hugging Face model.
+This is a Streamlit web app that generates captions from images using AI. It uses the BLIP model to describe images, and offers styled captions like **Funny**, **Poetic**, **Aesthetic**, or **Instagram** using either Hugging Face API (if available) or local templates.
 
-## 🔧 Tech Stack
+## 🔧 Features
+
+- 📤 Upload an image (JPG/PNG)
+- 🧠 AI-generated base caption using BLIP
+- 🎨 Style the caption into:
+  - Funny
+  - Poetic
+  - Aesthetic
+  - Instagram-style
+- ✅ Works **offline or online** (auto fallback)
+- 🔄 Generate new styled captions with a click
+
+## 🚀 Tech Stack
 
 - Streamlit
-- Hugging Face Transformers
-- Salesforce BLIP (for base captions)
-- Falcon-7B-Instruct (for caption stylizing)
+- Hugging Face Transformers (BLIP model)
+- Optional Hugging Face Inference API
+- Python (requests, PIL, torch)
 
-## 🚀 How to Run
+## 📦 Setup
 
-1. Clone the repo or upload to GitHub.
-2. Add your Hugging Face API token to `.streamlit/secrets.toml`
-3. Run the app locally:
-   ```bash
-   streamlit run app.py
-   ```
-4. Or deploy it via [Streamlit Cloud](https://streamlit.io/cloud).
-
-## ✨ Features
-
-- Upload image (JPG, PNG)
-- Choose from 4 creative styles
-- Get a base caption + stylized version
+```bash
+pip install -r requirements.txt
+streamlit run app.py
