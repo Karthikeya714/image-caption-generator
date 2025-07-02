@@ -26,5 +26,7 @@ This is a Streamlit web app that generates captions from images using AI. It use
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
-#output
-![image](https://github.com/user-attachments/assets/1e17d0d4-0f2d-4631-811b-1adfeb67fee1)
+
+##output
+![image](https://github.com/user-attachments/assets/ba777886-a47e-495b-b4b0-7369efff9642)
+
