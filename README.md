@@ -21,11 +21,16 @@ This is a Streamlit web app that generates captions from images using AI. It use
 - Optional Hugging Face Inference API
 - Python (requests, PIL, torch)
 
+## 📷 Screenshots
+
+### 🔍 Caption Style Selection UI
+![Screenshot1](./screenshots/Screenshot1.png)
+
+### 🎯 Caption Generation Result
+![Screenshot2](./screenshots/Screenshot2.png)
+
 ## 📦 Setup
 
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
-
-
-
